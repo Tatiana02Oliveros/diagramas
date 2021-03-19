@@ -1,0 +1,91 @@
+.CatalogodeCategoria{
+background-color:rgba(223, 197, 84, 0.781);
+background-image: url(../imagenes/galaxiadefondo.jpg);
+max-width: fit-content;
+max-height: fit-content;
+}
+.linea{
+	border-top: 10px solid goldenrod;
+	margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+	display: flex;
+	width: 85%;
+	margin: auto;
+	justify-content:space-around;
+	flex-wrap: wrap;
+	border-radius: 3px;
+}
+
+.imagenes{
+	background-color:#c7c7c7;
+	width: 32%;
+	position: relative;
+	height: 250px;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+	border-radius: 20px;
+}
+
+.imagenes img{
+	margin-top: 25px;
+	margin-left: 35px;
+	width: 80%;
+	height: 80%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+.overlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	height: 0;
+	transition: 1s ease;
+	overflow: hidden;
+	border-radius: 20px;
+
+}
+
+.overlay h2{
+	font-family: serif;
+	color: #00000;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.imagenes:hover .overlay{
+	height: 100%;
+	cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+	.contenedor-imagenes{
+		width: auto;
+	}
+}
+@media screen and (max-width:700px){
+	.contenedor-imagenes{
+		width: 90%;
+	}
+	.contenedor-imagenes .imagenes{
+		width: 48%;
+	}
+}
+
+@media screen and (max-width:450px){
+
+	.contenedor-imagenes{
+		width: 98%;
+	}
+	.contenedor-imagenes .imagenes{
+		width: 80%;
+	}
+}

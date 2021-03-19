@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2? family = Roboto: wght @ 300; 400; 700 & display = swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-producto{
+    height: 600px;
+    width: 25%;
+    box-shadow: 0 0 7px #111;
+    margin:  0 30px;
+}
+.contenedor-producto .contenedor-producto{
+    line-height: 200px;
+    width: 100%;
+    margin-bottom: 170px;
+    
+}
+
+.producto img{
+    margin: auto;
+    display: block;
+}
+
+.stormtroper img{
+    height: 330px;
+    width: 330px;
+}
+
+.contenedor-producto .stormtroper{
+    background-color: goldenrod;
+
+}
+
+.informacion-producto{
+    height: 80px;
+    width: 100%;
+}
+.informacion-producto h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #000;
+    margin-bottom: -10px;
+}
+.informacion-producto p{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .9em;
+    color: #555;
+}
+
+.precio1{
+    height: 50px;
+    width: 85%;
+    margin: auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-precios{
+   margin: auto;
+    width: 100%;
+    
+
+}
+.precios1{
+    margin: auto;
+    color: rgba(255, 0, 0, 0.829);
+    font-size: .8sem;
+}
+.precios2{
+    margin: auto;
+    color: #000;
+    font-size: 1.4em;
+}
+
+
+

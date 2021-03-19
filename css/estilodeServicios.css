@@ -1,0 +1,142 @@
+body{
+    background-color: #000000;
+}
+
+.linea1{
+	border-top: 10px solid goldenrod;
+
+}
+
+
+.slider{
+    width: 30%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0%;
+    width: 400%;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    margin-top: 30px;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+
+}
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+    
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+
+
+
+     }
+      
+
+
+    .formulario_registro{
+        width: 550px;
+        border: solid;
+        background: #c7c7c7;
+        padding: 40px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #000000;
+        box-shadow: 7px 13px 37px goldenrod;
+        align-items: center;
+        margin-bottom: 50px;  
+        font-size: 60px; 
+    
+    }
+    .formulario_registro h1{
+        background: #c7c7c7;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #000000;
+
+        
+    }
+    
+    .controlador{
+        width: 100%;
+        background: #c7c7c7;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        border: 1px solid #000000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        color: #000000; 
+    
+    }
+    
+    .formulario_registro p{
+        background: #c7c7c7;
+        height: 40px;
+        text-align: center;
+        font-size: 22px;
+        line-height: 40px;
+        color: #000000;
+    }
+    
+    
+    
+    .formulario_registro a{
+        background: #c7c7c7;
+        color: #000000;
+        text-decoration: none;
+    }
+    .formulario_registro a:hover{
+        color: goldenrod;
+        text-decoration: underline;
+    }
+    
+    .formulario_registro .Boton_registrar{
+        width: 16%;
+        background: #000000;
+        color: #c7c7c7;
+        font-size: 16px;
+        border-radius: 4px;
+        margin-left: 2px;
+       
+    
+    
+    }
+    
+    .Boton_registrar:hover{
+        background:goldenrod;
+        
+    }
+
+    footer{
+        margin-top: 20px;
+    }
+    
+    
+    
+    
+
+
+

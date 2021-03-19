@@ -1,0 +1,383 @@
+*{
+    margin:0;
+    padding: 0;
+}
+/*estilo de los contenedores div*/
+
+#limites{
+    width: 1200px;
+    height: 1000px;
+    background: #303030;
+    margin: 0.5em auto;
+    padding: 0.5em;
+
+}
+
+#header{
+    height: 20%;
+    background: #909497;
+    border-radius: 1em;
+    margin: 0.5em auto;
+}
+
+#login{
+    height: 10%;
+    height: 100px;
+    width: 150px;
+    background:  #4b2121;
+    border-radius: 1em;
+    margin: 0.5em auto;
+}
+#pestañas{
+    height: 5%;
+    background: #909497;
+    border-radius: 1em;
+    margin: 0.5em auto;
+}
+#contenido{
+    height: 50%;
+    background: #2f363b;
+    border-radius: 1em;
+}
+
+#final{
+    height: 10%;
+    background: #442241;
+    border-radius: 1em;
+    margin: 0.5em auto;
+}
+
+#listas{
+    width: 30%;
+    height: 95%;
+    background: #5c545b;
+    border-radius: 1em;
+    margin: 0.5em auto;
+    float: left;
+}
+
+#videos{
+    width: 68%;
+    height: 47%;
+    background: #5c545b;
+    border-radius: 1em;
+    margin: 0.5em auto;
+    float: right;
+}
+#imagenes{
+    width: 68%;
+    height: 42%;
+    background: #5c545b;
+    border-radius: 1em;
+    margin: 0.5em auto;
+    float: right;
+}
+body{
+    background: #442241;
+    margin: auto;
+}
+
+/*estilos de la galeria*/
+
+.galeria{
+    width: 90%;
+    margin: 0.5em auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.galeria li {
+    margin: 5px;
+}
+.galeria img {
+    width: 150px;
+    height: 100px;
+}
+
+
+/*estilo de modelo de imagenes a mostrar en la ventanas*/
+.modelo{
+    display: none;
+}
+
+.modelo:target {
+    display: block;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.modelo h4{
+    color: violet;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagen{
+    width: 100%;
+    height: 50%; 
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a{
+    color: #442241;
+    font-size: 50px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagen a:nth-child(2){
+    margin: 0px;
+    height: 100%;
+    flex-shrink: 2;
+
+}
+
+.imagen img{
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid;
+    border-radius: 1em;
+    box-sizing: border-box;
+}
+
+.cerrar {
+    display: block;
+    background: cornsilk;
+    width: 30px;
+    height: 30px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: darkmagenta;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+header {
+    width: 100%;
+    background: #4b2121;
+}
+#btn-menu{ 
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid oldlace;
+
+}
+header label:hover {
+    cursor: pointer;
+    background: rgba (0,0,0,0.3);
+
+}
+
+
+.menu :hover{
+    cursor: pointer;
+    background: rgba (0,0,0,0.3);
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.menu li{
+    text-align: center ;
+    flex-grow: 1;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color:oldlace;
+    text-decoration-color: none;
+
+}
+
+@media (max-width:768px) {
+            header label {
+                   display: block; 
+            }
+            .menu {
+                position: absolute;
+                background: white;
+                width: 70%;
+                margin-left: -70%;
+                transition: all 1s;
+            }
+            .menu ul {
+                flex-direction: column;
+            }
+        #btn-menu:checked ~ .menu {
+            margin: 0%;
+        }
+
+
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 100%;
+    margin:0 auto;
+    background: white;
+    overflow: hidden;
+}
+
+/*buscador de la pagina*/
+
+/*.boton-busqueda{
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 20px;
+    line-height: 0px;
+    transition: 0.3s;
+    width: 0;
+
+}*/
+
+.buscar input{
+    width: 580px;
+    height: 40px;
+    padding: 0 20px;
+    font size: 20px;
+    color: #1C201F;
+    outline: none;
+    border: 2px solidcolor;
+    border-radius: 30px;
+
+
+
+}
+
+/*@media screen and (min-width:480px){
+        .buscar:hover > .boton-busqueda{
+            width: 190px;
+        }
+}
+@media screen and (min-width:768px){
+    .buscar:hover > .boton-busqueda{
+        width: 190px;
+    }
+}*/
+
+/*creando el boton de inicio de sesión*/
+#boton-ingreso{
+    padding-top: 10px;
+    text-align: flex;
+    margin: auto;
+}
+.boton-ingreso{
+    margin: auto;
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    left: 85%;
+    top: 10%;
+    background: white;
+    height: 80px;
+    border-radius: 50px;
+    border: 2px solidcolor;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 3px o rgba(0,0,0,0.3);
+
+
+}
+
+/*slider de imagenes*/
+
+.slider{
+    margin: auto;
+    background-color: #5c545b;
+    width: 800px;
+    padding: 0px;
+}
+ul, li{
+    margin: 0;
+    padding: 0%;
+    list-style: none;
+
+}
+ul.slider{
+    position: relative;
+    width: 600px;
+    height: 84%;
+}
+
+ul.slider li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+     
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+ul.slider li:first-child{
+    opacity: 1;
+
+}
+
+ul.slider li:target{
+    opacity: 1;
+}
+
+.slider-menu{
+    text-align: center;
+    margin: 0px;
+}
+
+.slider-menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+
+.slider-menu li a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    background-color: blanchedalmond;
+    padding: .5px;
+    width: 10px;
+    height: 10px;
+    font-size: 0px;
+    border-radius: 100%;
+}
